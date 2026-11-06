@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>セラピスト紹介｜大須のメンズエステ【ねむりどき 大須店】（デモ）</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet"></head><body><script src="staff.js"></script>
+<div class="demo">サンプル／デモサイトです（架空の店舗・人物・条件はサンプル表示）</div>
+<div class="topstrip">大須メンズエステ ねむりどき 大須店｜完全個室・ドライヘッドスパ【名古屋・大須】</div>
+<header class="top"><div class="logo"><div class="l1">Nagoya Osu</div><div class="l2">Nemuridoki</div></div><button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button></header>
+<nav id="menu"><a href="index.html">Top<small>トップ</small></a><a href="system.html">System & Access<small>料金＆アクセス</small></a><a href="index.html#today">Today's<small>本日出勤</small></a><a href="therapist.html">Therapist<small>セラピスト一覧</small></a><a href="schedule.html">Schedule<small>週間出勤予定</small></a><a href="diary.html">Photo Diary<small>写メ日記</small></a><a href="system.html#access">Access<small>アクセス</small></a><a href="recruit.html">Recruit<small>求人情報</small></a></nav>
+
+<h2 class="sec"><span class="en">Profile</span><span class="ja">プロフィール</span></h2>
+<div class="gal" id="p-gal"></div>
+<div class="pname" style="font-size:21px" id="p-name"></div>
+<div class="pspec" id="p-spec"></div>
+<a class="linebtn" style="margin:12px 14px 0" href="#" id="p-line"></a>
+<h2 class="sec"><span class="en">Message</span><span class="ja">メッセージ</span></h2>
+<p class="msg" id="p-msg"></p>
+<h2 class="sec"><span class="en">Comment</span><span class="ja">コメント</span></h2>
+<p class="msg" id="p-comment"></p>
+<h2 class="sec"><span class="en">Photo Diary</span><span class="ja">写メ日記</span></h2>
+<div id="p-diary"></div>
+<h2 class="sec"><span class="en">Schedule</span><span class="ja">出勤情報</span></h2>
+<div style="padding:0 14px"><table class="week" id="p-week"></table>
+<p class="note" style="margin-top:8px">急遽お休みになる場合もございます。事前にお電話にてご確認下さい。</p></div>
+<a class="more" href="therapist.html">‹ セラピスト一覧へ戻る</a>
+<script src="diary-data.js"></script><script src="diary.js"></script>
+<script>
+const id = parseInt(new URLSearchParams(location.search).get("id") || "0", 10);
+const s = STAFF[Math.min(Math.max(id,0), STAFF.length-1)];
+const ORIG = {1:"img/staff-miura.jpg",2:"img/staff-ono.jpg",3:"img/staff-takada.jpg",5:"img/staff-nakamura.jpg"};
+const orig = ORIG[s.id] || (s.id>=6 ? "img/pool-" + String(s.id-5).padStart(2,"0") + ".jpg" : s.img);
+document.getElementById("p-gal").innerHTML = [s.img, orig, s.img].map(src=>`<img src="${src}" alt="">`).join("");
+document.getElementById("p-name").textContent = s.n;
+document.getElementById("p-spec").textContent = (s.exp ? "歴"+s.exp+"年" : "") + (s.role ? " ／ "+s.role : "") + " ／ 大須";
+document.getElementById("p-line").textContent = s.n + "ちゃんにLINE";
+document.getElementById("p-msg").textContent = "初めまして、" + s.n + "です。" + s.prof + "公式LINEからもご連絡お待ちしております。";
+document.getElementById("p-comment").textContent = s.n + "さんは、" + s.prof.replace(/^店長 ／ /,"") + "確かな技術と落ち着いた接客で、初めての方にも安心してお過ごしいただけます。ご予約が集中しやすいため、事前のご予約がおすすめです。『名古屋 大須 メンズエステ ねむりどき 大須店』";
+const mine = DIARY.filter(e=>e.staff===s.id);
+document.getElementById("p-diary").innerHTML = mine.length ? mine.map(diaryEntryHTML).join("") : '<p class="msg">写メ日記は準備中です。</p>';
+const days=["日","月","火","水","木","金","土"];
+let rows="";
+for(let d=0; d<7; d++){
+ const dt=new Date(); dt.setDate(dt.getDate()+d);
+ const on = ((s.id + d) % 3) !== 2 || d===0 && s.today;
+ const shown = d===0 ? s.today : on;
+ rows += `<tr><th>${dt.getMonth()+1}月${dt.getDate()}日（${days[dt.getDay()]}）</th><td>${shown ? s.base + ' [ 予約 ]' : '―'}</td></tr>`;
+}
+document.getElementById("p-week").innerHTML = rows;
+document.title = s.n + "｜セラピスト【ねむりどき 大須店】（デモ）";
+</script>
+<h2 class="sec"><span class="en">Link</span><span class="ja">店舗情報</span></h2>
+<dl class="shopinfo">
+<dt>Business</dt><dd>ねむりどき 大須店（架空）</dd>
+<dt>Price Range</dt><dd>￥6,900 - ￥16,900</dd>
+<dt>Description</dt><dd>名古屋・大須エリアの完全個室ドライヘッドスパ。水もオイルも使わないドライヘッドを中心に、静かな個室で深い眠りをお渡しします。</dd>
+<dt>営業時間</dt><dd>10:00 ～ 23:00</dd>
+<dt>住所</dt><dd>名古屋市中区大須（番地はサンプル表記）／大須観音駅 徒歩3分・上前津駅 徒歩5分</dd>
+<dt>Tel</dt><dd>052-XXX-XXXX（サンプル）</dd>
+</dl>
+<p class="healthy">ねむりどき 大須店はリラクゼーションを目的とした健全なサロンです。施術は性的サービスを目的としたものではございません。公序良俗に反する行為は一切お断りしております。このサイトは販売デモです。</p>
+<footer>(C) Nemuridoki Osu since 2026 - sample demo</footer>
+<div class="bar5">
+<a href="tel:0520000000"><span class="ic">☎</span><span class="lb">Tel</span></a>
+<a href="#"><span class="ic">📋</span><span class="lb">Reserve</span></a>
+<a href="system.html"><span class="ic">💳</span><span class="lb">Card</span></a>
+<a href="system.html"><span class="ic">¥</span><span class="lb">System</span></a>
+<a href="recruit.html"><span class="ic">🏷</span><span class="lb">Recruit</span></a>
+</div>
+
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>大須のメンズエステ｜大須のメンズエステ【ねむりどき 大須店】（デモ）</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet"></head><body><script src="staff.js"></script>
+<div class="demo">サンプル／デモサイトです（架空の店舗・人物・条件はサンプル表示）</div>
+<div class="topstrip">大須メンズエステ ねむりどき 大須店｜完全個室・ドライヘッドスパ【名古屋・大須】</div>
+<header class="top"><div class="logo"><div class="l1">Nagoya Osu</div><div class="l2">Nemuridoki</div></div><button class="burger" onclick="document.getElementById('menu').classList.toggle('open')">☰</button></header>
+<nav id="menu"><a href="index.html">Top<small>トップ</small></a><a href="system.html">System & Access<small>料金＆アクセス</small></a><a href="index.html#today">Today's<small>本日出勤</small></a><a href="therapist.html">Therapist<small>セラピスト一覧</small></a><a href="schedule.html">Schedule<small>週間出勤予定</small></a><a href="diary.html">Photo Diary<small>写メ日記</small></a><a href="system.html#access">Access<small>アクセス</small></a><a href="recruit.html">Recruit<small>求人情報</small></a></nav>
+
+<div class="hero"><img src="img/hero.jpg" alt=""><div class="cap"><div class="big">NEMURIDOKI</div><div class="sub">Nagoya Osu Dry Head Spa</div></div></div>
+<div class="catch"><h1>大須で、自分にご褒美を。</h1>
+<p>ねむりどき 大須店は、水もオイルも使わないドライヘッドスパの専門店。完全個室の静かな空間で、確かな技術のセラピストが一日の疲れを深くほぐします。大須でヘッドスパをお探しなら、ねむりどきへ。</p>
+<p>大須観音駅・上前津駅から徒歩圏内。お仕事帰りにもお立ち寄りいただけます。</p>
+<div class="links"><a href="#">ネット予約≫</a><a href="system.html">料金を見る≫</a></div></div>
+
+<h2 class="sec" id="today"><span class="en">Schedule</span><span class="ja">本日出勤をチェック！</span></h2>
+<div class="grid2" id="todayGrid"></div>
+<a class="more" href="therapist.html">セラピスト一覧を見る≫</a>
+
+<h2 class="sec"><span class="en">Photo Diary</span><span class="ja">写メ日記はこちら！</span></h2>
+<div class="dgrid" id="diaryGrid"></div>
+<a class="more" href="diary.html">写メ日記をもっと見る≫</a>
+
+<h2 class="sec"><span class="en">Voices</span><span class="ja">口コミはこちら！</span></h2>
+<div class="voicebox">お客様の口コミは、外部の口コミページでご覧いただけます。<br>（デモのため、口コミ本文は表示していません）</div>
+
+<h2 class="sec"><span class="en">Reservation</span><span class="ja">WEB予約はこちらから！</span></h2>
+<a class="resbtn" href="#">📅 WEB予約（デモ）</a>
+
+<h2 class="sec"><span class="en">Recruit</span><span class="ja">求人情報</span></h2>
+<div class="recruit">
+<div class="big">セラピスト募集中</div>
+<div class="nobar"><span>性的サービス一切なし！</span></div>
+<img class="strip" src="img/interior.jpg" alt="">
+<div class="big" style="margin-top:14px">大盛況につきルーム増設★</div>
+<div class="lines">ルーム増設！セラピスト大幅増員決定！<br>お客様からの電話が鳴りやみません！<br>働くなら今がチャンスです★</div>
+<div class="boxes">
+<div class="box"><div class="t">バック率</div><div class="m">75%以上</div><div class="b">完全日払い制</div></div>
+<div class="box"><div class="t">入店祝い金</div><div class="m">3万円支給</div><div class="b">10日出勤で</div></div>
+<div class="box"><div class="t">未経験も安心</div><div class="m">女性講師</div><div class="b">在中</div></div>
+</div>
+<p class="note" style="margin-top:10px">※条件はすべてサンプル表示です</p>
+<div class="recbtns"><a class="detail" href="recruit.html">🏷 求人詳細</a><a class="apply" href="#">LINEで応募（デモ）</a></div>
+</div>
+<script src="diary-data.js"></script><script src="diary.js"></script>
+<script>
+document.getElementById("todayGrid").innerHTML = STAFF.filter(s=>s.today).map(panelHTML).join("");
+document.getElementById("diaryGrid").innerHTML = DIARY.slice(0,8).map(diaryGridHTML).join("");
+</script>
+<h2 class="sec"><span class="en">Link</span><span class="ja">店舗情報</span></h2>
+<dl class="shopinfo">
+<dt>Business</dt><dd>ねむりどき 大須店（架空）</dd>
+<dt>Price Range</dt><dd>￥6,900 - ￥16,900</dd>
+<dt>Description</dt><dd>名古屋・大須エリアの完全個室ドライヘッドスパ。水もオイルも使わないドライヘッドを中心に、静かな個室で深い眠りをお渡しします。</dd>
+<dt>営業時間</dt><dd>10:00 ～ 23:00</dd>
+<dt>住所</dt><dd>名古屋市中区大須（番地はサンプル表記）／大須観音駅 徒歩3分・上前津駅 徒歩5分</dd>
+<dt>Tel</dt><dd>052-XXX-XXXX（サンプル）</dd>
+</dl>
+<p class="healthy">ねむりどき 大須店はリラクゼーションを目的とした健全なサロンです。施術は性的サービスを目的としたものではございません。公序良俗に反する行為は一切お断りしております。このサイトは販売デモです。</p>
+<footer>(C) Nemuridoki Osu since 2026 - sample demo</footer>
+<div class="bar5">
+<a href="tel:0520000000"><span class="ic">☎</span><span class="lb">Tel</span></a>
+<a href="#"><span class="ic">📋</span><span class="lb">Reserve</span></a>
+<a href="system.html"><span class="ic">💳</span><span class="lb">Card</span></a>
+<a href="system.html"><span class="ic">¥</span><span class="lb">System</span></a>
+<a href="recruit.html"><span class="ic">🏷</span><span class="lb">Recruit</span></a>
+</div>
+
+</body></html>
