@@ -27,7 +27,7 @@ const ORIG = {1:"img/staff-miura.jpg",2:"img/staff-ono.jpg",3:"img/staff-takada.
 const orig = ORIG[s.id] || (s.id>=6 ? "img/pool-" + String(s.id-5).padStart(2,"0") + ".jpg" : s.img);
 document.getElementById("p-gal").innerHTML = [s.img, orig, s.img].map(src=>`<img src="${src}" alt="">`).join("");
 document.getElementById("p-name").textContent = s.n;
-document.getElementById("p-spec").textContent = (s.exp ? "歴"+s.exp+"年" : "") + (s.role ? " ／ "+s.role : "") + " ／ 大須";
+document.getElementById("p-spec").textContent = "AGE." + s.age + " T:" + s.t + " ／ 大須";
 document.getElementById("p-line").textContent = s.n + "ちゃんにLINE";
 document.getElementById("p-msg").textContent = "初めまして、" + s.n + "です。" + s.prof + "公式LINEからもご連絡お待ちしております。";
 document.getElementById("p-comment").textContent = s.n + "さんは、" + s.prof.replace(/^店長 ／ /,"") + "確かな技術と落ち着いた接客で、初めての方にも安心してお過ごしいただけます。ご予約が集中しやすいため、事前のご予約がおすすめです。『名古屋 大須 メンズエステ ねむりどき 大須店』";

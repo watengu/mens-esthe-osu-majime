@@ -2,6 +2,8 @@ const STAFF=[
  {
   "n": "佐伯ゆき",
   "img": "img/staff-saeki-v2.jpg",
+  "age": 32,
+  "t": 158,
   "base": "10:00～22:00",
   "today": true,
   "badges": [
@@ -17,6 +19,8 @@ const STAFF=[
  {
   "n": "三浦あかり",
   "img": "img/uni-01.jpg",
+  "age": 28,
+  "t": 160,
   "base": "13:00～23:00",
   "today": true,
   "badges": [
@@ -32,6 +36,8 @@ const STAFF=[
  {
   "n": "小野ことり",
   "img": "img/uni-02.jpg",
+  "age": 25,
+  "t": 155,
   "base": "17:00～23:00",
   "today": true,
   "badges": [
@@ -47,6 +53,8 @@ const STAFF=[
  {
   "n": "高田まな",
   "img": "img/uni-03.jpg",
+  "age": 30,
+  "t": 162,
   "base": "11:00～21:00",
   "today": false,
   "badges": [
@@ -62,6 +70,8 @@ const STAFF=[
  {
   "n": "林さくら",
   "img": "img/staff-hayashi-v2.jpg",
+  "age": 24,
+  "t": 157,
   "base": "12:00～20:00",
   "today": false,
   "badges": [
@@ -77,6 +87,8 @@ const STAFF=[
  {
   "n": "中村れい",
   "img": "img/uni-05.jpg",
+  "age": 31,
+  "t": 163,
   "base": "15:00～23:00",
   "today": false,
   "badges": [
@@ -92,6 +104,8 @@ const STAFF=[
  {
   "n": "相川みお",
   "img": "img/uni-06.jpg",
+  "age": 26,
+  "t": 159,
   "base": "10:00～20:00",
   "today": true,
   "badges": [],
@@ -104,6 +118,8 @@ const STAFF=[
  {
   "n": "石田ゆり",
   "img": "img/uni-07.jpg",
+  "age": 33,
+  "t": 161,
   "base": "11:00～21:00",
   "today": true,
   "badges": [
@@ -118,6 +134,8 @@ const STAFF=[
  {
   "n": "井上かな",
   "img": "img/uni-08.jpg",
+  "age": 32,
+  "t": 158,
   "base": "12:00～22:00",
   "today": false,
   "badges": [
@@ -132,6 +150,8 @@ const STAFF=[
  {
   "n": "宇田あや",
   "img": "img/uni-09.jpg",
+  "age": 29,
+  "t": 160,
   "base": "13:00～23:00",
   "today": false,
   "badges": [
@@ -146,6 +166,8 @@ const STAFF=[
  {
   "n": "江口まい",
   "img": "img/uni-10.jpg",
+  "age": 28,
+  "t": 156,
   "base": "10:00～18:00",
   "today": false,
   "badges": [
@@ -161,6 +183,8 @@ const STAFF=[
  {
   "n": "太田るな",
   "img": "img/uni-11.jpg",
+  "age": 27,
+  "t": 162,
   "base": "15:00～23:00",
   "today": false,
   "badges": [],
@@ -173,6 +197,8 @@ const STAFF=[
  {
   "n": "岡田せり",
   "img": "img/uni-12.jpg",
+  "age": 26,
+  "t": 155,
   "base": "12:00～20:00",
   "today": true,
   "badges": [
@@ -187,6 +213,8 @@ const STAFF=[
  {
   "n": "加藤もも",
   "img": "img/uni-13.jpg",
+  "age": 25,
+  "t": 159,
   "base": "14:00～23:00",
   "today": false,
   "badges": [],
@@ -199,6 +227,8 @@ const STAFF=[
  {
   "n": "北川りお",
   "img": "img/uni-14.jpg",
+  "age": 24,
+  "t": 161,
   "base": "11:00～19:00",
   "today": false,
   "badges": [
@@ -213,6 +243,8 @@ const STAFF=[
  {
   "n": "工藤あい",
   "img": "img/uni-15.jpg",
+  "age": 34,
+  "t": 160,
   "base": "16:00～23:00",
   "today": false,
   "badges": [
@@ -227,6 +259,8 @@ const STAFF=[
  {
   "n": "近藤すず",
   "img": "img/uni-16.jpg",
+  "age": 31,
+  "t": 157,
   "base": "10:00～20:00",
   "today": true,
   "badges": [],
@@ -239,6 +273,8 @@ const STAFF=[
  {
   "n": "坂本はな",
   "img": "img/uni-17.jpg",
+  "age": 30,
+  "t": 163,
   "base": "11:00～21:00",
   "today": false,
   "badges": [
@@ -253,6 +289,8 @@ const STAFF=[
  {
   "n": "島田ゆめ",
   "img": "img/uni-18.jpg",
+  "age": 29,
+  "t": 158,
   "base": "12:00～22:00",
   "today": true,
   "badges": [
@@ -267,6 +305,8 @@ const STAFF=[
  {
   "n": "杉本あき",
   "img": "img/uni-19.jpg",
+  "age": 28,
+  "t": 160,
   "base": "13:00～23:00",
   "today": false,
   "badges": [
@@ -281,6 +321,8 @@ const STAFF=[
  {
   "n": "瀬戸なな",
   "img": "img/uni-20.jpg",
+  "age": 26,
+  "t": 156,
   "base": "10:00～18:00",
   "today": false,
   "badges": [
@@ -296,6 +338,8 @@ const STAFF=[
  {
   "n": "高橋こと",
   "img": "img/uni-21.jpg",
+  "age": 25,
+  "t": 162,
   "base": "15:00～23:00",
   "today": true,
   "badges": [],
@@ -308,6 +352,8 @@ const STAFF=[
  {
   "n": "田村みく",
   "img": "img/uni-22.jpg",
+  "age": 23,
+  "t": 155,
   "base": "12:00～20:00",
   "today": false,
   "badges": [
@@ -322,6 +368,8 @@ const STAFF=[
  {
   "n": "千葉れな",
   "img": "img/uni-23.jpg",
+  "age": 33,
+  "t": 161,
   "base": "14:00～23:00",
   "today": true,
   "badges": [],
@@ -334,6 +382,8 @@ const STAFF=[
  {
   "n": "辻そら",
   "img": "img/uni-24.jpg",
+  "age": 32,
+  "t": 159,
   "base": "11:00～19:00",
   "today": false,
   "badges": [
@@ -348,6 +398,8 @@ const STAFF=[
  {
   "n": "寺田ひな",
   "img": "img/uni-25.jpg",
+  "age": 30,
+  "t": 160,
   "base": "16:00～23:00",
   "today": true,
   "badges": [
@@ -362,6 +414,8 @@ const STAFF=[
  {
   "n": "中島ゆう",
   "img": "img/uni-26.jpg",
+  "age": 29,
+  "t": 158,
   "base": "10:00～20:00",
   "today": false,
   "badges": [],
@@ -374,6 +428,8 @@ const STAFF=[
  {
   "n": "永井かりん",
   "img": "img/uni-27.jpg",
+  "age": 27,
+  "t": 157,
   "base": "11:00～21:00",
   "today": true,
   "badges": [
@@ -388,6 +444,8 @@ const STAFF=[
  {
   "n": "西村とわ",
   "img": "img/uni-28.jpg",
+  "age": 26,
+  "t": 163,
   "base": "12:00～22:00",
   "today": false,
   "badges": [
@@ -402,6 +460,8 @@ const STAFF=[
  {
   "n": "野口ましろ",
   "img": "img/uni-29.jpg",
+  "age": 24,
+  "t": 156,
   "base": "13:00～23:00",
   "today": false,
   "badges": [
@@ -425,7 +485,7 @@ function panelHTML(s){
   <a class="ph" href="profile.html?id=${s.id}"><img src="${s.img}" alt="">${newTag}${rank}<span class="sns"><i class="s02">02</i><i class="sx">X</i></span></a>
   <div class="timebar">🕐 ${s.today ? s.base.replace("～"," ~ ") : "-----"}</div>
   <div class="pname"><a href="profile.html?id=${s.id}">${s.n}</a></div>
-  <div class="pspec">${s.exp ? "歴"+s.exp+"年" : ""}${s.role ? " ／ "+s.role : ""}</div>
+  <div class="pspec">AGE.${s.age} T:${s.t}</div>
   <a class="linebtn" href="#">${s.n}ちゃんにLINE</a>
  </div>`;
 }
